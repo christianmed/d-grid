@@ -1,0 +1,7 @@
+nav.main-nav
+  h2.main-nav__title Examples
+  ul.main-nav__menu
+    -var items = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14']
+    each item in items
+      li.main-nav__item
+        a.main-nav__link(href= item.toLowerCase() + "-example.html")= item

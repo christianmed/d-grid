@@ -1,0 +1,16 @@
+[class^="container-"] {
+  background: white;
+  width: 500px;
+  height: 500px;
+  margin: 0 auto 4em;
+  display: grid;
+  box-shadow: 0 20px 30px -10px rgba(#222,.5);
+}
+
+[class^="item-"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: white;
+}

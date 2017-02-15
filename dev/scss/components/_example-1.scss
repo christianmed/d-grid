@@ -1,0 +1,29 @@
+/*=============================================>>>>>
+= Usando grid-template-areas y grid-area =
+===============================================>>>>>*/
+.container-1 {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 100px auto 50px;
+  grid-template-areas:
+    "header header header header"
+    "main main main sidebar"
+    "footer footer footer footer";
+  grid-gap: 5px;
+
+  .item-1 {
+    background: $blue;
+    grid-area: header;
+  }
+  .item-2 {
+    background: $yellow;
+    grid-area: main;
+  }
+  .item-3 {
+    background: $red;
+    grid-area: sidebar;
+  }
+  .item-4 {
+    background: $green;
+    grid-area: footer;
+  }
+}

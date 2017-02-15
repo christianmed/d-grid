@@ -1,0 +1,54 @@
+/*=============================================>>>>>
+= Usando grid-template-areas y grid-area =
+===============================================>>>>>*/
+.container-13 {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px repeat(3, 1fr) 50px;
+  grid-template-areas:
+    "header header"
+    "slider slider"
+    "main main"
+    "content1 content2"
+    "footer footer";
+  grid-gap: 5px;
+
+  .item-1 {
+    grid-area: header;
+
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "logo menu";
+    align-items: stretch;
+    grid-gap: 5px;
+
+    .item-2 {
+      background: $blue;
+      grid-area: logo;
+    }
+    .item-3 {
+      background: $blue;
+      grid-area: menu;
+    }
+  }
+  .item-4 {
+    background: $red;
+    grid-area: slider;
+  }
+  .item-5 {
+    background: $yellow;
+    grid-area: main;
+  }
+  .item-6 {
+    background: darken($bg,25);
+    grid-area: content1;
+  }
+  .item-7 {
+    background: darken($bg,25);
+    grid-area: content2;
+  }
+  .item-8 {
+    background: $green;
+    grid-area: footer;
+  }
+}

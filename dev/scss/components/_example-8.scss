@@ -1,0 +1,34 @@
+/*=============================================>>>>>
+= Usando grid-template-areas y grid-area =
+===============================================>>>>>*/
+.container-8 {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 75px auto 75px;
+  grid-gap: 5px;
+
+  .item-1 {
+    background: $red;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+  }
+  .item-2 {
+    background: $blue;
+    grid-column: 2 / 5;
+    grid-row: 1 / 2;
+  }
+  .item-3 {
+    background: $yellow;
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+  }
+  .item-4 {
+    background: $red;
+    grid-column: 4 / 5;
+    grid-row: 2 / 4;
+  }
+  .item-5 {
+    background: $green;
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+  }
+}

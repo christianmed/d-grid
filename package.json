@@ -1,0 +1,17 @@
+{
+  "name": "Display-Grid",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {},
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^6.7.2",
+    "browser-sync": "^2.18.7",
+    "cssnano": "^3.10.0",
+    "gulp": "^3.9.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^6.3.0",
+    "gulp-pug": "^3.2.0",
+    "gulp-sass": "^3.1.0"
+  }
+}

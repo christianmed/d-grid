@@ -1,0 +1,48 @@
+/*=============================================>>>>>
+= Usando grid-template-areas y grid-area =
+===============================================>>>>>*/
+.container-12 {
+  grid-template-columns: 120px 1fr 1fr;
+  grid-template-rows: 100px 1fr 1fr 50px;
+  grid-gap: 5px;
+
+  .item-1 {
+    background: $blue;
+    // grid-column: 2 / 4;
+    grid-column: 2 / span 2;
+      // grid-row: 1 / 2;
+    grid-row: 1 / span 1;
+  }
+  .item-2 {
+    background: $red;
+    // grid-column: 1 / 2;
+    grid-column: 1 / span 1;
+    // grid-row: 1 / 5;
+    grid-row: 1 / span 4;
+  }
+  .item-3 {
+    background: $yellow;
+    // grid-column: 2 / 4;
+    grid-column: 2 / span 2;
+    // grid-row: 2 / 3;
+    grid-row: 2 / span 1;
+  }
+  .item-4 {
+    background: darken($bg,25);
+    // grid-column: 2 / 3;
+    grid-column: 2 / span 1;
+    // grid-row: 3 / 4;
+    grid-row: 3 / span 1;
+  }
+  .item-5 {
+    background: darken($bg,25);
+    // grid-column: 3 / 4;
+    grid-column: 3 / span 1;
+    // grid-row: 3 / 4;
+    grid-row: 3 / span 1;
+  }
+  .item-6 {
+    background: $green;
+    grid-column: 2 / 4;
+  }
+}
